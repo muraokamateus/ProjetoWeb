@@ -1,0 +1,339 @@
+@font-face {
+    font-family: "nunito";
+    src: url(fonts/NunitoSans-Regular.ttf);
+}
+@font-face {
+    font-family: "nunitobold900";
+    src: url(fonts/NunitoSans-ExtraBold.ttf);
+}
+
+/*
+////////////////////////////////////////////////////
+                    WEBSITE NORMAL
+////////////////////////////////////////////////////
+*/
+
+body{
+    margin: 0;
+    color: #353a40;
+}
+
+#wrapper{
+    background-image: url(img/gallaxy.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+header{
+    flex: 1;
+    display: flex;
+    padding: 16px 32px;
+
+}
+#header-left{
+    width: auto;
+    
+}
+#header-mid{
+    flex: 1;
+    display: flex;
+}
+#header-right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo-img{
+    height: 41.08px;
+    width: 128px;
+}
+
+#hamburguer{
+    display: none;
+}
+
+.button-text{
+    font-family: 'nunito';
+    font-size: 16px;
+    font-weight: 400;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    display: block;
+    width: max-content;
+}
+.button-text2{
+    font-family: 'nunito';
+    font-size: 16px;
+    font-weight: 700;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: block;
+    width: max-content;
+}
+
+.button-box{
+    background-color: #f04e23;
+    border: 1px solid #f04e23;
+    color: #fff;
+    border-radius: 6px;
+    padding-inline-start: 20px; 
+    padding-inline-end: 20px;
+}
+.login .button-text{
+    padding-inline-end: 40px;
+}
+
+/*Main/Corpo*/
+    main{
+        margin: none;
+        border: none;
+        padding: 110px 32px 0px 32px;/*80px 32px 0px 32px;*/
+
+    }
+
+/* TEXTO */
+.hero-container{
+    width: 100%;
+    /*max-width: ;*/
+    display: flex;
+}
+
+.hero-content{
+    flex: 1;
+}
+
+h2{
+    font-family: 'nunito';
+    font-weight: 400;
+    font-size: 47.12263200000001px;
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.hero-writte-top{
+    display: inline-block;
+    width: auto;
+    height: 168px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.top-text-mid{
+    font-family: 'nunitobold900';
+    font-weight: 900;
+}
+
+.hero-text-mid{
+    font-family: 'nunito';
+    display: inline-block;
+    width: auto;
+    height: 105.6px;
+    font-size: 25.888px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.hero-button{
+    font-family: 'nunito';
+    margin-top: 32px;
+    font-weight: 700;
+}
+.button-box2{
+    margin-right: 16px;
+    display: inline-block;
+    background-color: #f04e23;
+    padding: 16px;
+    border: 1px;
+    border-radius: 6px;
+}
+.inside-button-box-2{
+    color: #fff;
+}
+.button-box3{
+    display: inline-block;
+    background-color: #fff;
+    padding: 16px;
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+.text-button-box3{
+    color: #353a40;
+}
+.search-icon{
+    vertical-align: -15%;
+    height: 16px;
+    width: 16px;
+    margin-left: 4px;
+    margin-right: 0;
+}
+
+.hero-text-bot{
+    font-family: 'nunito';
+    font-size: 16px;
+    margin-top: 32px;
+}
+.orange-text{
+    display: inline-block;
+    color: #f04e23;
+}
+
+
+/*IMAGEM*/
+.mobile-image{
+    display: none;
+}
+.desktop-image{
+    width: 528px;/*438px;*/
+    height: 528px;
+}
+
+
+/*
+////////////////////////////////////////////////////
+                    MOBILE
+////////////////////////////////////////////////////
+*/
+@media screen and (max-width: 1024px){
+    .logo-img{
+        display: block;
+    }
+}
+@media screen and (max-width: 1024px){
+    #wrapper{
+        width: 100%;
+        background-image:linear-gradient(180deg,hsla(0,0%,100%,0),#fff), url(img/gallaxy.svg);
+        background-position: top;
+        background-size:100%;
+        background-repeat: no-repeat;
+    }
+}
+/*TextoCorpo*/
+@media screen and (max-width: 1024px){
+    .mobile-image{
+        flex: 1;
+    }
+    .hero-writte-top{
+        display: inline-block;
+        width: 100%;
+        height: 168px;
+        line-height: 1.2;
+        margin-bottom: 0;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    h2{
+        font-family: 'nunito';
+        font-weight: 400;
+        font-size: 25.888px;
+        display: inline-block;
+        text-align: left;
+        margin: 0;
+    }
+    .top-text-mid{
+        font-family: 'nunitobold900';
+        font-weight: 900;
+        position: relative;
+    }
+    .hero-text-mid{
+        font-family: 'nunito';
+        display: inline-block;
+        width: auto;
+        height: 99.2px;
+        font-size: 18x;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+/*//////////////////////////////////////////*/
+    .hero-button{
+        font-family: 'nunito';
+        width: 100%;
+        margin-top: 28px;
+        font-weight: 700;
+    }
+    .button-box2{
+        width: 100%;
+        display: inline-block;
+        background-color: #f04e23;
+        padding: 14px;
+        border: 1px;
+        border-radius: 6px;
+    }
+    .inside-button-box-2{
+        text-align: center;
+        color: #fff;
+    }
+    .button-box3{
+        width: 100%;
+        display: inline-block;
+        background-color: #fff;
+        padding: 14px;
+        border: 1px solid #000;
+        border-radius: 6px;
+    }
+    .text-button-box3{
+        text-align: center;
+        color: #353a40;
+    }
+    .search-icon{
+        vertical-align: -15%;
+        height: 16px;
+        width: 16px;
+        margin-right: 0;
+    }
+    
+    .hero-text-bot{
+        font-family: 'nunito';
+        font-size: 16px;
+        margin-top: 32px;
+    }
+    .orange-text{
+        display: inline-block;
+        color: #f04e23;
+    }
+    .desktop-image{
+        display: none;
+    }
+    /*///////////////NAV//////////////*/
+    .logo-img{
+        width: 112px;
+        height: 35.95px;
+        align-items: center;
+    }
+
+    #header-mid{
+        display: none;
+    }
+    #header-right{
+        display: none;
+    }
+
+    #hamburguer{
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+    }
+    .hamburguer-icon{
+        vertical-align: -.125em;
+        height: 1em;
+        width: 1.25em;
+        display: inline-flex;
+        overflow: visible;
+
+    }
+}

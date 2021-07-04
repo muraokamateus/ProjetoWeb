@@ -196,7 +196,7 @@ p{
     display: none;
 }
 .desktop-image{
-    width: 528px;/*438px;*/
+    width: 528px;
     height: 528px;
 }
 
@@ -206,12 +206,12 @@ p{
                     MOBILE
 ////////////////////////////////////////////////////
 */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 480px){
     .logo-img{
         display: block;
     }
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 480px){
     #wrapper{
         width: 100%;
         background-image:linear-gradient(180deg,hsla(0,0%,100%,0),#fff), url(img/gallaxy.svg);
@@ -221,18 +221,20 @@ p{
     }
 }
 /*TextoCorpo*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 480px){
     .mobile-image{
         flex: 1;
+        width: 332px;
+        height: 124.5px;
     }
     .hero-writte-top{
         display: inline-block;
         width: 100%;
-        height: 168px;
+        height: 121px;
         line-height: 1.2;
         margin-bottom: 0;
-        margin-block-start: 0.83em;
-        margin-block-end: 0.83em;
+        /*margin-block-start: 0.83em;*/
+        /*margin-block-end: 0.83em;*/
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
@@ -254,7 +256,7 @@ p{
         display: inline-block;
         width: auto;
         height: 99.2px;
-        font-size: 18x;
+        font-size: 18px;
         font-weight: 400;
         line-height: 1.5;
         margin-bottom: 0;
@@ -324,14 +326,16 @@ p{
     }
 
     #hamburguer{
-        display: flex;
-        flex: 1;
+        display: flex ;
+        flex: 2;
         justify-content: flex-end;
+        vertical-align: baseline;
     }
     .hamburguer-icon{
-        vertical-align: -.125em;
-        height: 1em;
-        width: 1.25em;
+        border-top: 1px;
+        vertical-align:baseline;
+        height: 18px;
+        width: 18px;
         display: inline-flex;
         overflow: visible;
 

@@ -212,6 +212,13 @@ p{
     }
 }
 @media screen and (max-width: 480px){
+    main{
+        padding: 90px 14px 0px 14px;
+    }
+    header{
+        padding: 14px 28px;
+    }
+
     #wrapper{
         width: 100%;
         background-image:linear-gradient(180deg,hsla(0,0%,100%,0),#fff), url(img/gallaxy.svg);
@@ -230,9 +237,10 @@ p{
     .hero-writte-top{
         display: inline-block;
         width: 100%;
-        height: 121px;
+        height: 100px;
         line-height: 1.2;
         margin-bottom: 0;
+        margin-top: 0;
         /*margin-block-start: 0.83em;*/
         /*margin-block-end: 0.83em;*/
         margin-inline-start: 0px;
@@ -264,15 +272,16 @@ p{
 /*//////////////////////////////////////////*/
     .hero-button{
         font-family: 'nunito';
-        width: 100%;
+        width: 95%;
         margin-top: 28px;
         font-weight: 700;
     }
     .button-box2{
-        width: 100%;
+        width: 95%;
         display: inline-block;
         background-color: #f04e23;
         padding: 14px;
+        margin-bottom: 14px;
         border: 1px;
         border-radius: 6px;
     }
@@ -281,7 +290,7 @@ p{
         color: #fff;
     }
     .button-box3{
-        width: 100%;
+        width: 95%;
         display: inline-block;
         background-color: #fff;
         padding: 14px;
@@ -301,7 +310,7 @@ p{
     
     .hero-text-bot{
         font-family: 'nunito';
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 32px;
     }
     .orange-text{
@@ -330,6 +339,7 @@ p{
         flex: 2;
         justify-content: flex-end;
         vertical-align: baseline;
+        padding-top: 10px;
     }
     .hamburguer-icon{
         border-top: 1px;
